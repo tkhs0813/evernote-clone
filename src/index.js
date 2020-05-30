@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const firebase = require('firebase');
+require('firebase/firestore');
+
+var firebaseConfig = {
+  // todo
+};
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
